@@ -3,20 +3,23 @@
   <head>
     <meta charset="utf-8">
     <title>Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
-      <nav class="main-navigation">                           
+      <nav class="main-navigation">
         <a class="main-header-logo" href="index.html"> <img src="img/index-logo.svg" width="160" height="65" alt="Логотип Нердс в каталоге">
         </a>
       <ul class="site-navigation">
-        <li><a href="studio.html">Студия</a></li>
-        <li><a href="customers.html">Клиенты</a></li>
-        <li class="site-navigation-current"><a href="shop.html">Магазин</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
+        <li class="studio"><a href="studio.html">студия</a></li>
+        <li class="customers"><a href="customers.html">клиенты</a></li>
+        <li class="site-navigation-current"><a class="active" href="shop.html">магазин</a></li>
+        <li class="contacts"><a href="contacts.html">контакты</a></li>
       </ul>
       <ul class="basket-navigation">
-        <li class="basket-buyer"><a href="basket.html">Корзина</a></li>
+        <li class="basket-buyer"><a href="basket.html">корзина</a></li>
       </ul>
       </nav>
       <h1 class="page-title"> <b>Магазин готовых шаблонов</b> </h1>
@@ -26,8 +29,8 @@
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
-            <legend>СЕТКА:</legend>
-              <ul>
+            <legend class="name-filter">сетка:</legend>
+              <ul class="mesh-filter">
                 <li class="filter-option">
                   <input type="radio" name="grid-option" value="adaptive" id="filter-adaptive" checked>
                   <label for="filter-adaptive">
@@ -49,41 +52,41 @@
               </ul>
           </fieldset>
           <fieldset>
-            <legend>ОСОБЕННОСТИ:</legend>
-              <ul>
+            <legend class="name-filter">особенности:</legend>
+              <ul class="filter-features">
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-slider" checked>
+                  <input class="filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-slider" checked>
                   <label for="filter-slider">
                     Слайдер
                   </label>
                 </li>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="advantage-block" id="filter-advantage-block">
+                  <input class="filter-input filter-input-checkbox" type="checkbox" name="advantage-block" id="filter-advantage-block">
                   <label for="filter-advantage-block">
                   Блок преимуществ
                   </label>
                 </li>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" id="filter-news" checked>
+                  <input class="filter-input filter-input-checkbox" type="checkbox" name="news" id="filter-news" checked>
                   <label for="filter-news">
                     Новости
                   </label>
                 </li>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery">
+                  <input class="filter-input filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery">
                   <label for="filter-gallery">
                     Галерея
                   </label>
                 </li>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="basket" id="filter-basket">
+                  <input class="filter-input filter-input-checkbox" type="checkbox" name="basket" id="filter-basket">
                   <label for="filter-basket">
                     Корзина
                   </label>
                 </li>
               </ul>
             </fieldset>
-            <button type="submit" class="filter-button button">Показать</button>
+            <button type="submit" class="filter-button">показать</button>
         </form>
       </section>
       <section class="catalog">
@@ -100,8 +103,8 @@
                   <a href="catalog-item.html">
                     <img src="img/produkt-sedona.jpg" width="360" height="576" alt="Шаблон Sedona">
                   </a>
-                </p> 
-                <a class="button" href="#">9 900 РУБ.</a>   
+                </p>
+                <a class="button" href="#">9 900 РУБ.</a>
             </li> -->
             <li class="catalog-item">
               <h3 class="visually-hidden">Седона</h3>
@@ -116,41 +119,48 @@
               <h3 class="visually-hidden">Шаблон Pink</h3>
               <p>
                 <img src="img/produkt-pink.jpg" width="360" height="576" alt="Pink">
-              </p>  
+              </p>
             </li>
             <li class="catalog-item">
               <h3 class="visually-hidden">Шаблон Бородинский</h3>
               <p>
                 <img src="img/produkt-barbershop.jpg" width="360" height="576" alt="Шаблон Барбершоп Бородинский">
-              </p>  
-            </li>      
+              </p>
+            </li>
             <li class="catalog-item">
               <h3 class="visually-hidden">Шаблон Mishka</h3>
               <p>
                 <img src="img/produkt-mishka.jpg" width="360" height="576" alt="Шаблон Mishka">
-              </p>  
+              </p>
             </li>
             <li class="catalog-item">
               <h3 class="visually-hidden">Шаблон А+</h3>
               <p>
                 <img src="img/produkt-aplus.jpg" width="220" height="165" alt="Шаблон А+">
-              </p>  
+              </p>
             </li>
             <li class="catalog-item">
               <h3 class="visually-hidden">Шаблон Кваст</h3>
               <p>
                 <img src="img/produkt-kvast.jpg" width="360" height="576" alt="Шаблон Кваст">
-              </p>  
-            </li>  
+              </p>
+            </li>
         </ul>
+        <!-- <ul class="pagination-list">
+          <li class="pagination-item pagination-item-current"><a>1</a></li>
+          <li class="pagination-item "><a href="#">2</a></li>
+          <li class="pagination-item"><a href="#">3</a></li>
+          <li class="pagination-item pagination-item-the_next"><a href="#">следующая</a></li>
+        </ul> -->
+      </section>
       </section>
     </main>
     <footer class=main-footer>
-      <div class="container-social">
-        <ul>
-          <li><a class="social-button" href="#">Вконтакте</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Инстаграм</a></li>
+      <div class="footer-social">
+        <ul class="social-blok">
+          <li><a class="social-button-vk" href="#">Вконтакте</a></li>
+          <li><a class="social-button-fb" href="#">Фейсбук</a></li>
+          <li><a class="social-button-instagram" href="#">Инстаграм</a></li>
         </ul>
         <p class="text-call">Давайте дружить, это выгодно!</p>
         <p class="text-benefit">Скидка 10% для друзей из социальных сетей.</p>
@@ -158,21 +168,21 @@
     </footer>
     <section>
       <form class="connections-form" method="post" action="https://echo.htmlacademy.ru">
-        <h1 class="headline-form">Напишите нам</h1>
+        <h2>Напишите нам</h2>
         <p>
-          <label for="user-name">Ваше имя:</label>
-          <input type="text" name="name" id="user-name" placeholder="Имя Фамилия">
+          <label class="name-form" for="user-name">Ваше имя:</label>
+          <input class="name-form-field" type="text" name="name" id="user-name" placeholder="Имя Фамилия">
         </p>
         <p>
-          <label for="user-email">Ваш e-mail:</label>
-          <input type="text" name="e-mail" id="user-email" placeholder="email@example.com">
+          <label class="email-form" for="user-email">Ваш e-mail:</label>
+          <input class="email-form-field" type="email" name="e-mail" id="user-email" placeholder="email@example.com">
         </p>
         <p>
-          <label for="user-message">Текст письма:</label>
-          <input type="text" name="message" id="user-message" placeholder="В свободной форме">
+          <label class="message-form" for="user-message">Текст письма:</label>
+          <input class="message-form-field" type="text" name="message" id="user-message" placeholder="В свободной форме">
         </p>
-        <button class="button" type="submit">Отправить</button>
-        <button class="modal-close" type="button">закрыть</button>
+        <button class="button-form" type="submit">отправить</button>
+        <button class="modal-close" type="button" src="img/close-cross.svg">закрыть</button>
       </form>
     </section>
   </body>

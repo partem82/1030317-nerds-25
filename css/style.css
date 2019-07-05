@@ -1,0 +1,338 @@
+body {
+  margin: 0;
+
+  font-family: "Roboto", Arial, Roboto;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #000000; /*#000000 (0, 0, 0, 0.5) чёрный, непрозрачный на 50% */
+  text-transform: none; /* управлять регистром символов */
+}
+
+.main-header {
+  background-color: #eeeeee;
+  color: #000000;
+}
+
+.main-header-logo:hover {
+  opacity: 0.8;
+}
+
+.main-header-logo:focus {
+  opacity: 0.3;
+}
+
+a {
+  text-decoration: none; /*отменил у ссылок подчеркивание, назначается браузером по умолчанию. */
+}
+
+.site-navigation,
+.basket-navigation,
+.list-order,
+.social-blok,
+.catalog-list,
+.mesh-filter,
+.filter-features,
+.pagination-list {
+  list-style: none; /* Перед элементами ненумерованного спика по умолчанию ставятся маркеры. Отменим это для списков в навигации */
+}
+
+/* .pagination-item a {
+  inline: block;
+  background-color: #eeeeee;
+  padding-top: 19px;
+  padding-right: 40px;
+  padding-bottom: 19px;
+  padding-left: 40px;
+  border-radius: 2px;
+  color: #000000;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+} */
+
+.site-navigation a, /* по умолчанию ссылки синие, задал черный */
+.basket-navigation a,
+.footer-social a {
+  text-transform: uppercase;
+  color: #000000; /*(0, 0, 0,) (0, 0, 0, 0.5) чёрный, непрозрачный на 50% */
+}
+
+.list-order a { /* задал белый цвет текста ссылке "заказать" */
+  line-height: 18px;
+  color: #ffffff; /* rgb(255, 255, 255) */
+}
+
+.active { /* подчеркивание активной страницы в нав */
+  border-bottom: 2px solid #fb565a;
+  padding: 13px;
+}
+
+.site-navigation a:hover,  /* :hover для наведения, меняет цвет  */
+.basket-navigation a:hover {
+  color: rgb(251, 86, 90);
+}
+
+.site-navigation a:focus,   /* :focus для фокусировки, меняет цвет */
+.basket-navigation a:focus {
+  color: rgba(0, 0, 0, 0.302);
+}
+
+.visually-hidden { /* спрятал текст */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.product-header-1 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.text-slogan-1 {
+  color: rgb(40, 49, 54); /* #283136 */
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+}
+
+.button-1 {
+  inline: block;
+  background-color: #fb565a;
+  padding-top: 19px;
+  padding-right: 40px;
+  padding-bottom: 19px;
+  padding-left: 40px;
+  border-radius: 2px;
+}
+
+.button-1:hover {
+  background-color: #e74246;
+}
+
+.button-1:focus {
+  color: #d7373b;
+}
+
+.product-header-2 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.text-slogan-2 {
+  color: rgb(40, 49, 54); /* #283136 */
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+}
+
+.button-2 {
+  inline: block;
+  background-color: #00ca74;
+  padding-top: 19px;
+  padding-right: 40px;
+  padding-bottom: 19px;
+  padding-left: 40px;
+  border-radius: 2px;
+}
+
+.button-2:hover {
+  background-color: #00bc6c;
+}
+
+.button-2:focus {
+  color: #00aa62;
+}
+
+.product-header-3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.text-slogan-3 {
+  color: rgb(40, 49, 54); /* #283136 */
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+}
+
+.button-3 {
+  inline: block;
+  background-color: #efc84a;
+  padding-top: 19px;
+  padding-right: 40px;
+  padding-bottom: 19px;
+  padding-left: 40px;
+  border-radius: 2px;
+}
+
+.button-3:hover {
+  background-color: #eab534;
+}
+
+.button-3:focus {
+  color: #e5a722;
+}
+
+.main-footer {
+  background-color:#ffffff;
+}
+
+.social-button-vk {
+  /* background-image: url("img/vk-icon.svg");
+  border-radius: 50%; */
+}
+
+.social-button-fb {
+    /* background-image: url("img/fb-icon.svg");
+    border-radius: 50%; */
+  }
+
+.social-button-instagram {
+  /* background-image: url("img/insta-icon.svg");
+  border-radius: 50%; */
+}
+
+.text-call { /* Давайте дружить, это выгодно! */
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 36px;
+  text-align: left;
+}
+
+.text-benefit { /* Скидка_10__для_друзей_из_социальных_сетей */
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(68, 68, 68);
+  line-height: 22px;
+  text-align: left;
+}
+
+.modal { /* для формы */
+  color: #000000;
+  background-color: #ffffff; /* rgb(255, 255, 255) */
+  background-position: 0 0;
+  border: 2px solid #dbdbdb;
+}
+
+.modal h2 {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.name-form,
+.email-form,
+.message-form {
+  font-size: 10px;
+  line-height: 16px;
+  font-weight: 700;
+}
+
+.name-form-field,
+.email-form-field,
+.message-form-field {
+  color: #a1a1a1;
+  font-size: 16px;
+  line-height: 18px;
+  border: 2px solid #d7dcde;
+  border-radius: 2px;
+}
+
+.name-form-field:hover {
+  color: #a1a1a1;
+  border: 2px solid #b4b9bb;
+}
+
+.name-form-field:focus {
+  color: #444444;
+  border: 2px solid #000000;
+  outline: none; /* удалил обводку рамки при активации */
+}
+
+.button-form {
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #fb565a;
+  border: none;
+  font-size: 10px;
+  line-height: 16px;
+  font-weight: 400;
+  border-radius: 2px;
+}
+
+.page-title { /* Магазин_готовых_шаблонов  */
+  font-size: 55px;
+  line-height: 55px;
+  text-align: center;
+}
+
+.filter fieldset { /* убрал обводку у <fieldset>  */
+  border: none;
+}
+
+.mesh-filter,
+.filter-features {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.name-filter  {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.name-filter label {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.filter-button {
+  background-color: #eeeeee;
+  color: #000000;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 2px;
+  border: none;
+  /* weight: 260px;
+  height: 50px; */
+}
+
+.filter-button:hover {
+  background-color: #dfdfdf;
+}
+
+.filter-button:active {
+  background-color: #d5d5d5;
+  color: rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0px 3px 0px 0px #bfbfbf;
+  outline: none;
+}
+.name-form input:invalid {
+  background-color: #e74462; /* Красный цвет фона полю имя */
+  color:  #e74462;
+}

@@ -3,75 +3,78 @@
   <head>
     <meta charset="utf-8">
     <title>Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
-      <nav class="main-navigation">                           
+      <nav class="main-navigation">
         <a class="main-header-logo"> <img src="img/index-logo.svg" width="160" height="65" alt="Логотип Нердс на главной">
         </a>
       <ul class="site-navigation">
-        <li><a href="studio.html">Студия</a></li>
-        <li><a href="customers.html">Клиенты</a></li>
-        <li><a href="inner.html">Магазин</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
+        <li class="studio"><a href="studio.html">студия</a></li>
+        <li class="customers"><a href="customers.html">клиенты</a></li>
+        <li class="inner"><a href="inner.html">магазин</a></li>
+        <li class="contacts"><a href="contacts.html">контакты</a></li>
       </ul>
       <ul class="basket-navigation">
-        <li class="basket-buyer"><a href="basket.html">Корзина</a></li> <!--selector {background-image: url("адрес-картинки");}-->
+        <li class="basket-buyer"><a href="basket.html">корзина</a></li> <!--selector {background-image: url("адрес-картинки");}-->
       </ul>
       </nav>
     </header>
     <main class="container">
-      <section class="order">                                
+      <section class="order">
         <h2 class="visually-hidden">Блок заказа</h2>
         <ul class="list-order">
-          <li class="order web site">                                 
-            <h3 class="product-header">ВЕБ-САЙТЫ</h3>
-            <img src="img/illustration-1.png" alt="илюстрация веб-сайт">
-            <p class="text slogan">Мир никогда не будет прежним после того как увидит ваш сайт!</p> <!--целесообразно <p> заменить <span> ?-->
-            <a href="order-web-site.html">заказать</a>
+          <li class="order-web-site">
+            <h3 class="product-header-1">веб-сайты</h3>
+            <img src="img/illustration-1.png" width="300" height="146" alt="илюстрация веб-сайт">
+            <p class="text-slogan-1">Мир никогда не будет прежним после того как увидит ваш сайт!</p> <!--целесообразно <p> заменить <span> ?-->
+            <a class="button-1" href="order-web-site.html">заказать</a>
           </li>
           <li class="order-of-applications">
-            <h3 class="product-header">ПРИЛОЖЕНИЯ</h3>
-            <img src="img/illustration-2.png" alt="иллюстрация приложения">
-            <p class="text sloga">Покорите топ-10 приложений в AppStore и Google Play</p>
-            <a href="order-of-applications.html">заказать</a>
+            <h3 class="product-header-2">приложения</h3>
+            <img src="img/illustration-2.png" width="300" height="146" alt="иллюстрация приложения">
+            <p class="text-slogan-2">Покорите топ-10 приложений в AppStore и Google Play</p>
+            <a class="button-2" href="order-of-applications.html">заказать</a>
           </li>
-          <li class="presentation order">
-            <h3 class="product-header">ПРЕЗЕНТАЦИИ</h3>
-            <img src="img/illustration-3.png" alt="иллюстрация презентации">
-            <p class="text sloga">Вы даже не подозреваете, насколько вы изумительны!</p>
-            <a href="presentation-order.html">заказать</a>
+          <li class="presentation-order">
+            <h3 class="product-header-3">презентации</h3>
+            <img src="img/illustration-3.png" width="300" height="146" alt="иллюстрация презентации">
+            <p class="text-slogan-3">Вы даже не подозреваете, насколько вы изумительны!</p>
+            <a class="button-3" href="presentation-order.html">заказать</a>
           </li>
         </ul>
       </section>
     </main>
     <footer class=main-footer>
       <div class="footer-social">
-        <ul>
-          <li><a class="social-button" href="#">Вконтакте</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Инстаграм</a></li>
+        <ul class="social-blok">
+          <li><a class="social-button-vk" href="#">Вконтакте</a></li>
+          <li><a class="social-button-fb" href="#">Фейсбук</a></li>
+          <li><a class="social-button-instagram" href="#">Инстаграм</a></li>
         </ul>
         <p class="text-call">Давайте дружить, это выгодно!</p>
         <p class="text-benefit">Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </footer>
-    <section>
+    <section class="modal modal-connections">
       <form class="form-connections" method="post" action="https://echo.htmlacademy.ru">
-        <h1 class="form-headline">Напишите нам</h1>
+        <h2>Напишите нам</h2>
         <p>
-          <label for="user-name">Ваше имя:</label>
-          <input type="text" name="name" id="user-name" placeholder="Имя Фамилия">
+          <label class="name-form" for="user-name">Ваше имя:</label>
+          <input class="name-form-field" type="text" name="name" id="user-name" placeholder="Имя Фамилия">
         </p>
         <p>
-          <label for="user-email">Ваш e-mail:</label>
-          <input type="text" name="e-mail" id="user-email" placeholder="email@example.com">
+          <label class="email-form" for="user-email">Ваш e-mail:</label>
+          <input class="email-form-field" type="text" name="e-mail" id="user-email" placeholder="email@example.com">
         </p>
         <p>
-          <label for="user-message">Текст письма:</label>
-          <input type="text" name="message" id="user-message" placeholder="В свободной форме">
+          <label class="message-form" for="user-message">Текст письма:</label>
+          <input class="message-form-field" type="text" name="message" id="user-message" placeholder="В свободной форме">
         </p>
-        <button class="button" type="submit">Отправить</button>
+        <button class="button-form" type="submit">отправить</button>
         <button class="modal-close" type="button">закрыть</button>
       </form>
     </section>
